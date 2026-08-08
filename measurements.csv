@@ -1,0 +1,13 @@
+url,protocol,http_version,elapsed_time,status,error_message
+https://www.google.com/,http2,HTTP/2,0.063568115234375,success,
+https://www.google.com/,http3,,0.46306586265563965,success,
+https://www.cloudflare.com/,http2,HTTP/2,0.8337035179138184,success,
+https://www.cloudflare.com/,http3,,1.1327307224273682,success,
+https://www.facebook.com/,http2,HTTP/2,0.43741655349731445,success,
+https://www.facebook.com/,http3,,0.969900369644165,success,
+https://www.youtube.com/,http2,HTTP/2,0.2067563533782959,success,
+https://www.youtube.com/,http3,,0.6240348815917969,success,
+https://www.wikipedia.org/,http2,HTTP/2,0.03157639503479004,success,
+https://www.wikipedia.org/,http3,,15.019572973251343,timeout,
+https://qldtbeta.phenikaa-uni.edu.vn/conggiangvien/login.aspx,http2,HTTP/2,0.2625439167022705,success,
+https://qldtbeta.phenikaa-uni.edu.vn/conggiangvien/login.aspx,http3,,15.011350631713867,timeout,
