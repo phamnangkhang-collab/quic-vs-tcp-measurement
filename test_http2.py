@@ -23,8 +23,10 @@ def measure_http2(url: str):
         return {
             "url": url,
             "protocol": "http2",
+            "http_version": None,
             "elapsed_time": elapsed,
-            "status": "failed"
+            "status": "failed",
+            "error_message": str(e)
         }
 
 if __name__ == "__main__":

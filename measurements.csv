@@ -1,13 +1,95 @@
 url,protocol,http_version,elapsed_time,status,error_message
-https://www.google.com/,http2,HTTP/2,0.063568115234375,success,
-https://www.google.com/,http3,,0.46306586265563965,success,
-https://www.cloudflare.com/,http2,HTTP/2,0.8337035179138184,success,
-https://www.cloudflare.com/,http3,,1.1327307224273682,success,
-https://www.facebook.com/,http2,HTTP/2,0.43741655349731445,success,
-https://www.facebook.com/,http3,,0.969900369644165,success,
-https://www.youtube.com/,http2,HTTP/2,0.2067563533782959,success,
-https://www.youtube.com/,http3,,0.6240348815917969,success,
-https://www.wikipedia.org/,http2,HTTP/2,0.03157639503479004,success,
-https://www.wikipedia.org/,http3,,15.019572973251343,timeout,
-https://qldtbeta.phenikaa-uni.edu.vn/conggiangvien/login.aspx,http2,HTTP/2,0.2625439167022705,success,
-https://qldtbeta.phenikaa-uni.edu.vn/conggiangvien/login.aspx,http3,,15.011350631713867,timeout,
+https://www.google.com/,http2,HTTP/2,0.07736897468566895,success,
+https://www.google.com/,http3,,0.43216395378112793,success,
+https://www.cloudflare.com/,http2,HTTP/2,0.5903151035308838,success,
+https://www.cloudflare.com/,http3,,1.2975060939788818,success,
+https://www.facebook.com/,http2,HTTP/2,0.8261146545410156,success,
+https://www.facebook.com/,http3,,0.9893202781677246,success,
+https://www.youtube.com/,http2,HTTP/2,0.25707411766052246,success,
+https://www.youtube.com/,http3,,0.6159923076629639,success,
+https://www.wikipedia.org/,http2,HTTP/2,0.03713726997375488,success,
+https://www.wikipedia.org/,http3,,15.019862651824951,timeout,
+https://mbbank.com.vn/,http2,,5.108060359954834,failed,timed out
+https://mbbank.com.vn/,http3,,15.021003723144531,timeout,
+https://www.vietcombank.com.vn/,http2,HTTP/2,0.0527188777923584,success,
+https://www.vietcombank.com.vn/,http3,,0.390026330947876,failed,"2026-08-08 18:41:56,087 INFO quic [9cdf2f72c966d932] Connection close received (code 0x150, reason 200:internal error)
+Traceback (most recent call last):
+  File ""/workspaces/quic-vs-tcp-measurement/http3_client.py"", line 608, in <module>
+    asyncio.run(
+  File ""/home/codespace/.python/current/lib/python3.12/asyncio/runners.py"", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File ""/home/codespace/.python/current/lib/python3.12/asyncio/runners.py"", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/home/codespace/.python/current/lib/python3.12/asyncio/base_events.py"", line 684, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File ""/workspaces/quic-vs-tcp-measurement/http3_client.py"", line 396, in main
+    async with connect(
+  File ""/home/codespace/.python/current/lib/python3.12/contextlib.py"", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File ""/home/codespace/.python/current/lib/python3.12/site-packages/aioquic/asyncio/client.py"", line 93, in connect
+    await protocol.wait_connected()
+  File ""/home/codespace/.python/current/lib/python3.12/site-packages/aioquic/asyncio/protocol.py"", line 146, in wait_connected
+    await asyncio.shield(self._connected_waiter)
+ConnectionError
+"
+https://shopee.vn/,http2,HTTP/2,0.10298323631286621,success,
+https://shopee.vn/,http3,,0.5248756408691406,success,
+https://tiki.vn/,http2,HTTP/2,0.07883381843566895,success,
+https://tiki.vn/,http3,,0.548058032989502,success,
+https://vnu.edu.vn/,http2,HTTP/2,0.4926879405975342,success,
+https://vnu.edu.vn/,http3,,15.020458221435547,timeout,
+https://phenikaa-uni.edu.vn/vi,http2,,0.1951124668121338,failed,[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)
+https://phenikaa-uni.edu.vn/vi,http3,,15.019027709960938,timeout,
+https://qldtbeta.phenikaa-uni.edu.vn/conggiangvien/login.aspx,http2,HTTP/2,0.24801874160766602,success,
+https://qldtbeta.phenikaa-uni.edu.vn/conggiangvien/login.aspx,http3,,15.019935369491577,timeout,
+https://www.google.com/,http2,HTTP/2,0.08399415016174316,success,
+https://www.google.com/,http3,,0.45325469970703125,success,
+https://www.cloudflare.com/,http2,HTTP/2,0.49863505363464355,success,
+https://www.cloudflare.com/,http3,,1.0879416465759277,success,
+https://www.facebook.com/,http2,HTTP/2,0.48203349113464355,success,
+https://www.facebook.com/,http3,,0.9503984451293945,success,
+https://www.youtube.com/,http2,HTTP/2,0.261401891708374,success,
+https://www.youtube.com/,http3,,0.5314953327178955,success,
+https://www.wikipedia.org/,http2,HTTP/2,0.03313279151916504,success,
+https://www.wikipedia.org/,http3,,15.02070426940918,timeout,
+https://mbbank.com.vn/,http2,,5.034727096557617,failed,timed out
+https://mbbank.com.vn/,http3,,15.020390272140503,timeout,
+https://www.vietcombank.com.vn/,http2,HTTP/2,0.058394670486450195,success,
+https://www.vietcombank.com.vn/,http3,,0.41963887214660645,failed,"2026-08-08 18:48:21,531 INFO quic [5b89fdf0deed5ffc] Connection close received (code 0x150, reason 200:internal error)
+Traceback (most recent call last):
+  File ""/workspaces/quic-vs-tcp-measurement/http3_client.py"", line 608, in <module>
+    asyncio.run(
+  File ""/home/codespace/.python/current/lib/python3.12/asyncio/runners.py"", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File ""/home/codespace/.python/current/lib/python3.12/asyncio/runners.py"", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/home/codespace/.python/current/lib/python3.12/asyncio/base_events.py"", line 684, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File ""/workspaces/quic-vs-tcp-measurement/http3_client.py"", line 396, in main
+    async with connect(
+  File ""/home/codespace/.python/current/lib/python3.12/contextlib.py"", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File ""/home/codespace/.python/current/lib/python3.12/site-packages/aioquic/asyncio/client.py"", line 93, in connect
+    await protocol.wait_connected()
+  File ""/home/codespace/.python/current/lib/python3.12/site-packages/aioquic/asyncio/protocol.py"", line 146, in wait_connected
+    await asyncio.shield(self._connected_waiter)
+ConnectionError
+"
+https://shopee.vn/,http2,HTTP/2,0.10086798667907715,success,
+https://shopee.vn/,http3,,0.4531683921813965,success,
+https://tiki.vn/,http2,HTTP/2,0.048921823501586914,success,
+https://tiki.vn/,http3,,0.49591541290283203,success,
+https://vnu.edu.vn/,http2,HTTP/2,0.41814613342285156,success,
+https://vnu.edu.vn/,http3,,15.020294666290283,timeout,
+https://phenikaa-uni.edu.vn/vi,http2,,0.16625618934631348,failed,[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)
+https://phenikaa-uni.edu.vn/vi,http3,,15.019122123718262,timeout,
+https://qldtbeta.phenikaa-uni.edu.vn/conggiangvien/login.aspx,http2,HTTP/2,0.2543208599090576,success,
+https://qldtbeta.phenikaa-uni.edu.vn/conggiangvien/login.aspx,http3,,15.008842945098877,timeout,
