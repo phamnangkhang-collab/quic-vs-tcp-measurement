@@ -19,3 +19,6 @@ tính 0.3-0.8 giây), không phản ánh thuần túy tốc độ giao thức QU
   thời gian.
 - Hướng cải thiện trong tương lai: đo và trừ overhead khởi động tiến trình, 
   hoặc tự viết QUIC client tối giản không qua subprocess.
+  
+## Kết quả sau khi phân tích
+Kết quả đo lường 12 domain qua 23 lần lặp lại cho thấy sự phân hóa rõ rệt trong việc áp dụng HTTP/3 tại Việt Nam: các nền tảng Big Tech quốc tế và một số sàn thương mại điện tử lớn (Shopee, Tiki) đã hỗ trợ HTTP/3 hoàn toàn, trong khi lĩnh vực ngân hàng và giáo dục — vốn ưu tiên tính ổn định hơn tốc độ — chưa triển khai giao thức này. Đáng chú ý, Wikipedia là ngoại lệ khi không hỗ trợ HTTP/3 dù là nền tảng công nghệ lớn
