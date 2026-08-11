@@ -28,9 +28,9 @@ riêng, dữ liệu được commit trở lại repo sau mỗi lần chạy.
 
 ## Kết quả trực quan
 
-![Dashboard tổng quan - tỷ lệ hỗ trợ HTTP/3 theo nhóm domain](screenshots/bieu_do.png)
+![Dashboard tổng quan - tỷ lệ hỗ trợ HTTP/3 theo nhóm domain](screenshots/bieu_do.jpg)
 
-![Bảng thời gian phản hồi theo domain](screenshots/bang_solieu.png)
+![Bảng thời gian phản hồi theo domain](screenshots/bang_solieu.jpg)
 
 ## Kết quả chính
 
