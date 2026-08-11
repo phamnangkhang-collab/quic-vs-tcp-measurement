@@ -26,6 +26,12 @@ flowchart TD
 Toàn bộ pipeline chạy tự động mỗi giờ qua GitHub Actions — không cần server
 riêng, dữ liệu được commit trở lại repo sau mỗi lần chạy.
 
+## Kết quả trực quan
+
+![Dashboard tổng quan - tỷ lệ hỗ trợ HTTP/3 theo nhóm domain](screenshots/bieu_do.png)
+
+![Bảng thời gian phản hồi theo domain](screenshots/bang_solieu.png)
+
 ## Kết quả chính
 
 Sau 1608 lần đo trên 12 domain thuộc 5 nhóm:
