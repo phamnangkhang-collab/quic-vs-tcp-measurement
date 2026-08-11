@@ -1,7 +1,6 @@
 import pandas as pd
 
 df = pd.read_csv("measurements.csv")
-
 print(df.head())
 print(df.shape)
 
@@ -42,5 +41,10 @@ df_http3 = df[df["protocol"] == "http3"]
 support_rate = df_http3.groupby("category")["status"].apply(
     lambda x: (x == "success").mean() * 100
 )
+
+
 print(support_rate)
+
+avg_by_protocol.to_csv("summary_by_protocol.csv")
+support_rate.to_csv("summary_by_category.csv")
 
