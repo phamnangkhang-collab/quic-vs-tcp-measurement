@@ -7389,3 +7389,51 @@ https://phenikaa-uni.edu.vn/vi,http2,,1.778801441192627,failed,[SSL: CERTIFICATE
 https://phenikaa-uni.edu.vn/vi,http3,,15.018654584884644,timeout,
 https://qldtbeta.phenikaa-uni.edu.vn/conggiangvien/login.aspx,http2,HTTP/2,1.225949764251709,success,
 https://qldtbeta.phenikaa-uni.edu.vn/conggiangvien/login.aspx,http3,,15.018592596054077,timeout,
+https://www.google.com/,http2,HTTP/2,0.139451265335083,success,
+https://www.google.com/,http3,,0.534663200378418,success,
+https://www.cloudflare.com/,http2,HTTP/2,0.8414905071258545,success,
+https://www.cloudflare.com/,http3,,1.069462776184082,success,
+https://www.facebook.com/,http2,HTTP/2,0.4335060119628906,success,
+https://www.facebook.com/,http3,,0.8563942909240723,success,
+https://www.youtube.com/,http2,HTTP/2,0.2870292663574219,success,
+https://www.youtube.com/,http3,,0.720034122467041,success,
+https://www.wikipedia.org/,http2,HTTP/2,0.07098102569580078,success,
+https://www.wikipedia.org/,http3,,15.018732786178589,timeout,
+https://mbbank.com.vn/,http2,,5.486398696899414,failed,timed out
+https://mbbank.com.vn/,http3,,15.018796443939209,timeout,
+https://www.vietcombank.com.vn/,http2,HTTP/2,0.1287829875946045,success,
+https://www.vietcombank.com.vn/,http3,,0.5639050006866455,failed,"2026-08-16 06:19:20,682 INFO quic [09f778c7eb21e815] Connection close received (code 0x150, reason 200:internal error)
+Traceback (most recent call last):
+  File ""/home/runner/work/quic-vs-tcp-measurement/quic-vs-tcp-measurement/http3_client.py"", line 608, in <module>
+    asyncio.run(
+  File ""/opt/hostedtoolcache/Python/3.12.13/x64/lib/python3.12/asyncio/runners.py"", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File ""/opt/hostedtoolcache/Python/3.12.13/x64/lib/python3.12/asyncio/runners.py"", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/opt/hostedtoolcache/Python/3.12.13/x64/lib/python3.12/asyncio/base_events.py"", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File ""/home/runner/work/quic-vs-tcp-measurement/quic-vs-tcp-measurement/http3_client.py"", line 396, in main
+    async with connect(
+               ^^^^^^^^
+  File ""/opt/hostedtoolcache/Python/3.12.13/x64/lib/python3.12/contextlib.py"", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File ""/opt/hostedtoolcache/Python/3.12.13/x64/lib/python3.12/site-packages/aioquic/asyncio/client.py"", line 93, in connect
+    await protocol.wait_connected()
+  File ""/opt/hostedtoolcache/Python/3.12.13/x64/lib/python3.12/site-packages/aioquic/asyncio/protocol.py"", line 146, in wait_connected
+    await asyncio.shield(self._connected_waiter)
+ConnectionError
+"
+https://shopee.vn/,http2,HTTP/2,1.1802823543548584,success,
+https://shopee.vn/,http3,,2.569091796875,success,
+https://tiki.vn/,http2,HTTP/2,0.9636521339416504,success,
+https://tiki.vn/,http3,,3.0493011474609375,success,
+https://vnu.edu.vn/,http2,HTTP/2,1.565713882446289,success,
+https://vnu.edu.vn/,http3,,15.018476486206055,timeout,
+https://phenikaa-uni.edu.vn/vi,http2,,0.7403738498687744,failed,[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)
+https://phenikaa-uni.edu.vn/vi,http3,,15.018394708633423,timeout,
+https://qldtbeta.phenikaa-uni.edu.vn/conggiangvien/login.aspx,http2,HTTP/2,1.2211601734161377,success,
+https://qldtbeta.phenikaa-uni.edu.vn/conggiangvien/login.aspx,http3,,15.018937349319458,timeout,
